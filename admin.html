@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Info</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+        }
+        .admin {
+            margin: 10px 0;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .admin:last-child {
+            border-bottom: none;
+        }
+        .btn {
+            padding: 8px 15px;
+            background: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Admin Information</h2>
+        <div class="admin" id="admin1">
+            <h3>Suraj Gole</h3>
+            <p>Phone: 5269741391</p>
+            <p>Email: <a href="mailto:suraj@gmail.com">suraj@gmail.com</a></p>
+        </div>
+        <div class="admin" id="admin2">
+            <h3>Varad Mohanpurakar</h3>
+            <p>Phone: 7621983465</p>
+            <p>Email: <a href="mailto:varad@gmail.com">varad@gmail.com</a></p>
+        </div>
+        <button class="btn" onclick="showAlert()">Click for Alert</button>
+    </div>
+
+    <script>
+        function showAlert() {
+            alert("This is the Admin Info Page!");
+        }
+    </script>
+</body>
+</html>
